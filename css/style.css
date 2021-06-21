@@ -1,0 +1,316 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hnazmul-navbar {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  background: rgba(0, 0, 0, 0.897);
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-shadow: 0px 2px 2px 2px #3b3b3b13, 0px 7px 10px -10px rgba(0, 0, 0, 0.336);
+          box-shadow: 0px 2px 2px 2px #3b3b3b13, 0px 7px 10px -10px rgba(0, 0, 0, 0.336);
+  border-bottom: 2px rgba(255, 255, 0, 0.815) solid;
+}
+
+.hnazmul-navbar .hnazmul-navbar-container {
+  /* max-width: 1000px; */
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-nav-brand {
+  padding-right: 20px;
+}
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-nav-brand img{
+  width: 100px;
+}
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-nav-toggle-btn {
+  display: none;
+}
+
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-nav-toggle-btn button {
+  border: none;
+}
+
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-nav-toggle-btn img.toggler-btn {
+  width: 20px;
+}
+
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper ul.navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0px !important;
+  width: 100%;
+}
+
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper ul.navbar-list li.navbar-list-item {
+  list-style: none;
+}
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper ul.navbar-list li.navbar-list-item a{
+  transition: 1s;
+}
+
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper ul.navbar-list li.navbar-list-item .navbar-list-link {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper button.navbar-closer-icon {
+  border: none;
+  background: none;
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper button.navbar-closer-icon.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper button.navbar-closer-icon img.navbar-closer {
+  width: 30px;
+}
+
+@media screen and (max-width: 920px) {
+  .hnazmul-navbar .hnazmul-navbar-container {
+    max-width: 650px;
+    
+  }
+  .hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper ul.navbar-list li.navbar-list-item .navbar-list-link {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 920px) and (max-width: 650px) {
+  .hnazmul-navbar .hnazmul-navbar-container {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .hnazmul-navbar .hnazmul-navbar-container .hnazmul-nav-toggle-btn {
+    display: block;
+    margin-left: auto;
+  }
+  .hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content {
+    display: block;
+    position: fixed;
+    z-index: 500;
+    height: 100%;
+    width: 100%;
+    background: rgba(33, 35, 36, 0.479);
+    top: 0px;
+    left: -120%;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-clip-path: circle(0.2% at 0 0);
+            clip-path: circle(0.2% at 0 0);
+  }
+  .hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content.navbar-show {
+    left: 0px;
+    -webkit-clip-path: circle(141.4% at 0 0);
+            clip-path: circle(141.4% at 0 0);
+  }
+  .hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper ul.navbar-list {
+    display: block;
+    background: #000;
+    width: 80%;
+  }
+  .hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper ul.navbar-list li.navbar-list-item {
+    text-align: center;
+    color: #fff;
+  }
+  .hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper button.navbar-closer-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    display: block;
+    background: white;
+    border-radius: 50%;
+  }
+  .hnazmul-navbar .hnazmul-navbar-container .hnazmul-navbar-content .hnazmul-navbar-content-wrapper button.navbar-closer-icon:hover {
+    background: #000;
+    color: #fff;
+
+  }
+}
+/*# sourceMappingURL=style.css.map */
+
+
+header .theBanner{
+ 
+  background: linear-gradient(rgba(0, 60, 0, 0.5), rgba(70, 0, 0, 0.5)), url(../images/halo_3_hd\ \(1\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 250px 0;
+  padding-left: 100px;
+}
+header .theBanner
+ .theTitle h1{
+  font-size: 45px;
+  font-weight: 400px;
+  
+}
+header .theBanner .gameSubtitle{
+font-size: 16px;
+font-weight: 600;
+}
+header .theBanner .rmbutton button{
+  margin-top: 25px;
+  padding: 8px 20px;
+  border-radius: 25px;
+ background-color: rgba(255, 255, 0, 0.815);
+ border: none;
+color: #000;
+font-size: 18px;
+}
+
+
+/* Game section */
+
+
+section.game
+ {
+  border-top: 2px rgba(255, 255, 0, 0.815) solid;
+
+  padding: 80px 0;
+  background:linear-gradient(rgba(0, 128, 0, 0.5),rgba(255, 174, 0, 0.979));
+}
+section.game .thegamet h2,
+.theGameGallary .theGallaryTitle h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+section.game .thegamet h2::after,
+.theGameGallary .theGallaryTitle h2::after{
+content: '';
+display: block;
+width: 100px;
+height: 5px;
+background: #fff;
+margin: 15px auto;
+}
+section.game .theboxall {
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+section.game .theboxall .box{
+width: 400px;
+padding: 20px;
+background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4));
+border-radius: 12px;
+}
+section.game .theboxall .box .theimg {
+  width: 100%;
+}
+section.game .theboxall .box .theimg img {
+width: 100%;
+}
+section.game .theboxall .box .thedesc {
+padding: 5px;
+color: white;
+font-weight: 600;
+text-align: justify;
+}
+/* gallary section */
+section.theGameGallary{
+  padding: 50px 0;
+  background: linear-gradient(rgba(221, 48, 48, 0.644), rgba(230, 151, 6, 0.582));
+}
+
+section.theGameGallary .theImages{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+section.theGameGallary .theImages .theImage{
+  width: 350px;
+  margin-bottom: 25px;
+}
+section.theGameGallary .theImages .theImage img{
+  width: 100%;
+}
+
+/* footer section */
+
+.thefooter{
+  width: 100%;
+  background: #fff;
+  box-shadow: -1px -1px 2px rgb(114, 98, 98);
+  padding: 15px;
+  text-align: center;
+}
+.thefooter button{
+  padding: 8px 20px;
+  border-radius: 25px;
+  background: #000;
+}
+.thefooter button a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+@media screen and (max-width: 1024px){
+  section.game .theboxall .box{
+    margin: 20px;
+    }
+}
+@media screen and (max-width: 667px){
+  section.game .theboxall .box{
+      width: 100%;
+    }
+    header .theBanner{
+ 
+      background: linear-gradient(rgba(0, 60, 0, 0.5), rgba(70, 0, 0, 0.5)), url(../images/halo_3_hd\ \(1\).jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #fff;
+      padding: 50px;
+    }
+}
